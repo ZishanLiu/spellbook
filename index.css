@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body{
+    background-image: url(wood.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'indie Flower',cursive;
+}
+
+h1{
+    color: white;
+}
+
+ul{
+    color:white;
+}
