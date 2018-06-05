@@ -1,6 +1,9 @@
-const button = document.querySelector('button')
+const form = document.querySelector('form')
 
-button.addEventListener('click', changeHeading)
-function changeHeading(){
+
+const changeHeading = function(ev){
+    ev.preventDefault()
     document.querySelector('p.special').textContent = 'yo'
 }
+
+form.addEventListener('submit', changeHeading)
