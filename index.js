@@ -5,7 +5,9 @@ const changeHeading = function(ev){
     ev.preventDefault()
     const f = ev.target
     const spellName = f.spellName.value
-    document.querySelector('h1').textContent = spellName
+    document.querySelector('#spells').textContent += ' ' + spellName
+
+    f.reset()
 }
 
 form.addEventListener('submit', changeHeading)
