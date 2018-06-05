@@ -5,7 +5,7 @@ const changeHeading = function(ev){
     ev.preventDefault()
     const f = ev.target
     const spellName = f.spellName.value
-    document.querySelector('#spells').textContent += ' ' + spellName
+    document.querySelector('#spells').innerHTML += `<p>` + spellName+`</p>` 
 
     f.reset()
 }
