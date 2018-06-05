@@ -5,4 +5,5 @@ const changeContents = function(){
     heading.textContent = 'done !'
 }
 
+
 button.addEventListener('click',changeContents)
