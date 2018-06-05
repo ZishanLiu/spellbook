@@ -13,14 +13,22 @@
         homework1 mega
     </h1>
     
-    <form>
+    <form id = "form">
         input:<br>
-        <input id = "input" type = "text"><br>
+        <input id = "input" type = "text" name = "input"><br>
         <br/>
     </form>
 
-    <button id = "button">Change Text</button>
+    <button onclick="myFunction()">Change Text</button>
 
-    <script src="homework1_mega.js"></script> 
+    <script>
+
+        function myFunction(){
+            const newheading = document.getElementById("input").value
+            const heading = document.getElementById("heading")
+            heading.textContent = newheading
+        }
+
+    </script> 
 </body>
 </html>
