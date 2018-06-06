@@ -1,16 +1,9 @@
-const form = document.querySelector('form')
+const button = document.querySelector('button')
 
-
-const changeHeading = function(ev){
-    ev.preventDefault()
-    const f = ev.target
-    const spellName = f.spellName1.value
-    const spellName2 = f.spellName2.value
-    document.querySelector('#spells').innerHTML += `<p>` + spellName+`</p>` 
-    document.querySelector('#spells').innerHTML += `<p>` + spellName2 + `</p>`
-
-    f.reset()
+const changeContents = function(){
+    const heading = document.querySelector('h1')
+    heading.textContent = 'done !'
 }
 
 
-form.addEventListener('submit', changeHeading)
+button.addEventListener('click',changeContents)
