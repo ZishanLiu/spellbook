@@ -1,7 +1,7 @@
 const button = document.querySelector('button')
 
 const changeContents = function(){
-    const heading = document.querySelector('h1')
+    const heading = document.getElementById("head2")
     heading.textContent = 'done !'
 }
 
